@@ -4,26 +4,26 @@ import { Outlet, Link } from "react-router-dom";
 const Layout = () => {
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col">
-      <nav className="bg-teal-500 text-white p-4 shadow-md">
-        <ul className="flex gap-4 justify-center">
+      <nav className="  p-[24px] mx-auto">
+        <ul className="flex gap-[48px] justify-center">
           <li>
-            <Link to="/" className="hover:text-yellow-400">
+            <Link to="/" className=" transition duration-300 transform hover:scale-110 hover:text-[#4b4b9b] text-[28px]  ">
               Home
             </Link>
           </li>
           <li>
-            <Link to="/about" className="hover:text-yellow-400">
+            <Link to="/work" className="transition duration-300 transform hover:scale-110 hover:text-[#4b4b9b] text-[28px]">
+              Work
+            </Link>
+          </li>
+          <li>
+            <Link to="/about" className="transition duration-300 transform hover:scale-110 hover:text-[#4b4b9b] text-[28px]">
               About
             </Link>
           </li>
           <li>
-            <Link to="/contact" className="hover:text-yellow-400">
+            <Link to="/contact" className="transition duration-300 transform hover:scale-110 hover:text-[#4b4b9b] text-[28px]">
               Contact
-            </Link>
-          </li>
-          <li>
-            <Link to="/products" className="hover:text-yellow-400">
-              Products
             </Link>
           </li>
         </ul>

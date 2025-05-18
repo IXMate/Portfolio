@@ -1,16 +1,16 @@
-import { Link } from "react-router";
+import React from 'react'
 
-const Home = () => {
-    return (
-      <div className="text-center">
-        <h1 className="text-3xl font-bold mb-4">Welcome to Our App</h1>
-        <Link to="/about">
-          <button className="px-4 py-2 bg-teal-500 text-white rounded-md hover:bg-teal-700 transition">
-            Go to About
-          </button>
-        </Link>
+function Home() {
+  return (
+    <div className='flex justify-between mx-auto my-[6rem]'>
+      <div className='text-7xl uppercase leading-[6rem] font-black'>Full-Stack <br/> Developer</div>
+      <div className='flex flex-col gap-[4px] border-l-4 pl-[100px] border-[#cfcfd9c1]'>
+          <p className='mt-[3rem] text-2xl text-gray-700  capitalize'>Full-Stack</p>
+          <p className='text-2xl text-gray-700  capitalize'>Animation</p>
+          <p className='text-2xl text-gray-700  capitalize'>Based In Thailand</p>
       </div>
-    );
-  };
+    </div>
+  )
+}
 
-  export default Home;
+export default Home
